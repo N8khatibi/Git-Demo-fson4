@@ -1,0 +1,18 @@
+*{
+color: #434455;
+font-family: Roboto;
+text-decoration: none;
+}
+title{
+    color: blueviolet;
+}
+nav{
+    display: flex;
+    flex-direction: row;  
+    justify-content: space-between;
+
+}
+
+address{
+    
+}
