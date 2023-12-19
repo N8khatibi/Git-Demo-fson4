@@ -1,148 +1,217 @@
-<html lang="en"><head>
+<html lang="en">
+
+<head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
-  
+
+
   <title>Go IT Project</title>
 
-<link rel="stylesheet" href="http://127.0.0.1:5500/style.css?_cacheOverride=1702286251422"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.css?_cacheOverride=1702286251423" integrity="sha512-gA2Bvu0/hw4oj0Lp8ZHjK+o3S4BE5m8d/wNVy6ktKLhHKPpWLQwv9ixzuWirWOakoJqlBdePq2NhoCaUOQ5npQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></head>
+  <link rel="stylesheet" href="http://127.0.0.1:5500/style.css?_cacheOverride=1702286251422">
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.css?_cacheOverride=1702286251423"
+    integrity="sha512-gA2Bvu0/hw4oj0Lp8ZHjK+o3S4BE5m8d/wNVy6ktKLhHKPpWLQwv9ixzuWirWOakoJqlBdePq2NhoCaUOQ5npQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer">
+</head>
+
 <body>
 
-<!--Nav Logo-->
-<header>
-  <nav class="contaner nav">
-  <a href="/goit-markup-hw-01">
-    <h2 id="title"><span class="headerLogoText">WEB</span>STUDIO</h2>
-  </a>
+  <!--Nav Logo-->
+  <header>
+    <div class="contaner">
+      <nav>
+        <a href="/goit-markup-hw-01">
+          <h2 id="title"><span class="headerLogoText">WEB</span>STUDIO</h2>
+        </a>
+        
 
-  <!--Nav Bar-->
+        <!--Nav Bar-->
 
-   <ul class="nav-list">
-      <li style="margin-left:0px;"><a class="nav-item" href="index.html">Studio</a></li>
-      <li><a class="nav-item" href="portfolio.html">Portfolio</a></li>
-      <li><a class="nav-item" href="contacts.html">Contacts</a></li>
-  </ul>
+        <ul class="nav-list">
+          <li style="margin-left:0px;"><a class="nav-item" href="index.html">Studio</a></li>
+          <li><a class="nav-item" href="portfolio.html">Portfolio</a></li>
+          <li><a class="nav-item" href="contacts.html">Contacts</a></li>
+        </ul>
 
-<!-- Link to email address  -->
+        <!-- Link to email address  -->
 
-  <address class="address">
-   <ul>
-      <li><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-      <li><a href="tel:+110001111111">+11 (000) 111-11-11</a></li>
-   </ul>
-  </address>
- </nav>
-</header>
+        <address class="address">
+          <ul class="itemaddress">
+            <li><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+            <li><a href="tel:+110001111111">+11 (000) 111-11-11</a></li>
+          </ul>
+        </address>
+      </nav>
+    </div>
+  </header>
 
-<!--Section 1--> 
-<main>
- <section id="hero">
-  <br>
-  <br>
-  <center>
-  <h1>Effective Solutions for Your Business</h1>
-  <a href="otherserver.html">
-    <button class="service-button">Other Service</button>
-  </a>
-</center>
+  <!--hero-Section 1-->
+  <main>
+    <section id="hero">
+      <div class="contaner">
 
-   
- </section>
+        <br>
+        <br>
+        <center>
+          <h1>Effective Solutions for Your Business</h1>
+          <a><button onclick="openpopup()" class= "service-button">Other Service</button></a>
+          <div class="popup" id="popup">
+              <form>
 
-<!--Section 2 Feature-->
-<section id="contaner features">
-    <ul class="feature-group">
+                <h3>Leave your contacts and we will call you back</h3>
+
+                <label>
+                  Name
+                  <input class="inputpopup" type="text" name="username" >
+                </label>
+
+                <label>
+                  Phone
+                  <input class="inputpopup" type="text" name="username" >
+                </label>
+
+                <label>
+                  Email
+                  <input class="inputpopup" type="text" name="username">
+                </label>
+
+                <label>
+                  Feedback
+                  <textarea class="inputpopup" name="feedback" rows="5" placeholder="Text Input"></textarea>
+                </label>
+
+                <div class="terms">
+                  <input type="checkbox" name="Terms" value="terms">
+                  <label class="form-label" for="terms">I accept the terms and conditions of the <span id="linkterms">Privacy Policy</span></label>
+                </div>
+
+              <button type="OK" onclick="closepopup()">OK</button>
+            </form>
+          </div>
+          <script>
+          function openpopup(){
+            popup.classList.add("open-popup");}  
+          function closepopup(){
+            popup.classList.remove("open-popup");} 
+            let popup = document.getElementById("popup")
+          </script>
+        </center>
        
-      <li class="flink" alt="link" style="width: 18rem;">
-         <div class="background"><img src="./Image/antenna 1.svg" class="feature-img" alt="antenna"></div>
+      </div>
+    </section>
+
+    <!--Section 2 Feature-->
+    <section class="sectionContainer">
+      <ul class="sectionTwoUL">
+
+        <li class="sectionTwoList" alt="link">
+          <div class="background"><img src="./Image/antenna 1.svg" class="feature-img" alt="antenna"></div>
           <h5 class="fwords">Strategy</h5>
-          <p class="feature-text">Bring the key message to the brand's audience for the best price within the shortest possible time.</p>
+          <p class="feature-text">Bring the key message to the brand's audience for the best price within the shortest
+            possible time.</p>
         </li>
 
-        <li class="flink" alt="link" style="width: 18rem;">
+        <li class="sectionTwoList" alt="link">
           <div class="background"><img src="./Image/clock 1.svg" class="feature-img" alt="clock"></div>
-            <h5 class="fwords">Punctuality</h5>
-            <p class="feature-text"> Our goal is to identify the business problem to walk away with the perfect and Creative solutions</p>
-          </li>
+          <h5 class="fwords">Punctuality</h5>
+          <p class="feature-text"> Our goal is to identify the business problem to walk away with the perfect and
+            Creative solutions</p>
+        </li>
 
-          <li class="flink" alt="link" style="width: 18rem;">
-            <div class="background"> <img src="./Image/diagram 1.svg" class="feature-img" alt="diagram"></div>
-              <h5 class="fwords">Diligence</h5>
-              <p class="feature-text"> Research and confirm brands than present the strongest digital growth opportunities and minimize risk.</p>
-            </li>
-
-    
-            <li class="flink" alt="link" style="width: 18rem;">
-              <div class="background"> <img src="./Image/astronaut 1.svg" class="feature-img" alt="astronaut"></div>
-                <h5 class="fwords">Technologie</h5>
-                <p class="feature-text"> Design practice focused on digital experiences. We bring forth a deep passion for problem-solving.</p>
-              </li>
-    
-  </ul>
-
-<!--Sector 2 Pictures-->
-  <h2 class="contaner border-title">What Are We Doing</h2>
-     <ul>
-      <li> <img class="phone" src="./Image/img 1.png" alt="Computer"> 
-      </li><li> <img class="phone" src="./Image/Rectangle 71.png" alt="Phone Slides"> 
-      <il> <img class="phone" src="./Image/Rectangle 71 (1).png" alt="Phone"> </il>
-    </li></ul>
-  </section>
-
-<!--Sector 3 Team-->
-<section id="contaner team-group" style="width: 100%; height: 100%; background: #F4F4FD">
-  <h2 class="border-title">Our Team</h2>
-  <figure>
-    <ul>
-
-      <li class="card" alt="Mark Guerrero" style="width: 18rem;">
-        <img src="./Image/Mark.png" class="card-img" alt="card-pic">
-          <div class="card-body">
-          <h5 class="name">Mark Guerrero</h5>
-          <span class="dec">Product Designer</span>
-          <a href="#" class="btn btn-primary">Go somewhere</a>
-         </div>
-      
+        <li class="sectionTwoList" alt="link">
+          <div class="background"> <img src="./Image/diagram 1.svg" class="feature-img" alt="diagram"></div>
+          <h5 class="fwords">Diligence</h5>
+          <p class="feature-text"> Research and confirm brands than present the strongest digital growth opportunities
+            and minimize risk.</p>
         </li>
 
 
-    <li class="card" alt="Tom Ford" style="width: 18rem;">
-      <img src="./Image/Tom.png" class="card-img" alt="card-pic">
-        <div class="card-body">
-        <h5 class="name">Tom Ford</h5>
-        <span class="dec"> Developer </span>
-        <a href="#" class="btn btn-primary">Go somewhere</a>
-       </div>
-      </li> 
+        <li class="sectionTwoList" alt="link">
+          <div class="background"> <img src="./Image/astronaut 1.svg" class="feature-img" alt="astronaut"></div>
+          <h5 class="fwords">Technologie</h5>
+          <p class="feature-text"> Design practice focused on digital experiences. We bring forth a deep passion for
+            problem-solving.</p>
+        </li>
 
+      </ul>
+    </section>
+  
 
-  <li class="card" alt="Camila Garcia" style="width: 18rem;">
-    <img src="./Image/Cam.png" class="card-img" alt="card-pic">
-      <div class="card-body">
-      <h5 class="name">Camila Garcia</h5>
-      <span class="dec"> Marketing</span>
-      <a href="#" class="btn btn-primary">Go somewhere</a>
-     </div>
-    </li>
+    <!--Sector 3 Pictures-->
+    <section class="sectionContainer">
+      <h2>What Are We Doing</h2>
+      <ul class="phonegroup">
+        <li> <img class="phone" src="./Image/img 1.png" alt="Computer"></li>
+        <li> <img class="phone" src="./Image/Rectangle 71.png" alt="Phone Slides"></il>
+        <il> <img class="phone" src="./Image/Rectangle 71 (1).png" alt="Phone"> </il>
+      </ul>
+    </section>
 
-  <li class="card" alt="Daniel Wilson" style="width: 18rem;">
-    <img src="./Image/Dan.png" class="card-img" alt="card-pic">
-      <div class="card-body">
-      <h5 class="name">Daniel Wilson</h5>
-      <span class="dec"> UI Designer</span>
-      <a href="#" class="btn btn-primary">Go somewhere</a>
-     </div>
-    </li>
-   </ul>
-  </figure>
-</section>
-</main>
+    <!--Sector 4 Team-->
+    <section class="sectionContainer">
+      <div class="contaner">
+        <h2 class="contaner border-title">Our Team</h2>
 
-<footer style="width: 100%; height: 100%; background: #2E2F42"> 
+        <ul class="row">
+          <div class="col-3">
+
+            <li class="card d-block">
+              <img class="card-img-top" alt="card-img" src="./Image/Mark.png" />
+              <div class="card-body">
+                <h5 class="card-title">Mark Guerrero</h5>
+                <span class="card-text">Product Designer</span>
+              </div> 
+            </li> 
+          </div>
+          <div class="col-3">
+
+            
+            <li class="card d-block">
+              <img class="card-img-top" alt="card-img" src="./Image/Tom.png" />
+              <div class="card-body">
+                <h5 class="card-title">Tom Fort</h5>
+                <span class="card-text">Frontend Developer</span>
+                <a href="javascript: void(0);" class="btn btn-primary"></a>
+              </div> 
+            </li> 
+          </div>
+          <div class="col-3">
+
+            
+            <li class="card d-block">
+              <img class="card-img-top" alt="card-img" src="./Image/Cam.png" />
+              <div class="card-body">
+                <h5 class="card-title">Camila Garcia</h5>
+                <span class="card-text">Marketing</span>
+                <a href="javascript: void(0);" class="btn btn-primary">Button</a>
+              </div> 
+            </li> 
+          </div>
+          <div class="col-3">
+
+            
+            <li class="card d-block">
+              <img class="card-img-top" alt="card-img" src="./Image/Dan.png"/>
+              <div class="card-body">
+                <h5 class="card-title">Daniel Wilson</h5>
+                <span class="card-text">UI Designer</span>
+                <a href="javascript: void(0);" class="btn btn-primary">Button</a>
+              </div> 
+            </li> 
+          </div>
+        </ul>
+    </section>
+  </main>
+
+  <footer style="width: 100%; height: 50%; background: #2E2F42">
+    <div class="contaner">
       <h3 span="" class="iris">WEBSTUDIO</h3>
-     <p>Increase the flow of customers and sales for your business with digital marketing &amp; growth solutions.</p>
-</footer>
+      <p>Increase the flow of customers and sales for your business with digital marketing &amp; growth solutions.</p>
+    </div>
+  </footer>
 
 
-</script>
-</body></html>
+  </script>
+</body>
+
+</html>
