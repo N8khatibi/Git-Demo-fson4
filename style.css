@@ -7,7 +7,7 @@ list-style: none;
 
 
 /* ==naveeee== */
-#title{ 
+.title{ 
     color: #2E2F42;
     margin-left: 50px;
     font-size: 18px;
@@ -19,7 +19,7 @@ list-style: none;
     word-wrap: break-word 
 }
  
-#title .headerlogotext {
+.title .headerlogotext {
     color: #4D5AE5;
     margin-left: 100px;
     font-size: 18px;
@@ -76,6 +76,24 @@ nav {
     line-height: 24px;
     letter-spacing: 0.32px;
     word-wrap: break-word
+}
+
+.navmail {
+    width: 15px;
+}
+.navemailcontent {
+    margin-right: 15px;
+
+}
+
+.navphone{
+    width: 15px;
+    margin-left: 20px;
+}
+
+.navcellnumber {
+    width: 140px;
+    margin-left: auto;
 }
 
 .itemaddress {
@@ -138,6 +156,7 @@ h1 {
     gap: 10px; 
     display: inline-flex"   
 }
+/* ==hero pop up== */
 .popup {
     width: 408px;
     height: 584px;
@@ -165,11 +184,8 @@ h1 {
     flex-direction: column;
     flex-direction: column;
     justify-content: center;
-    align-items: ;
-    text-align: left;
-
-
-}
+    align-items;
+    text-align: left;}
 
 .popup h2 {
     font-size: 38px;
@@ -202,8 +218,7 @@ h1 {
     font-size: 12px;
     font-family: Roboto;
     font-weight: 400;
-    text-decoration: underline;
-}
+    text-decoration: underline;}
 
 
 /* features== */ 
@@ -283,6 +298,15 @@ h2 {
 }
 
 /* ==Team== */
+.teambackground {
+    width: 100%; 
+    height: 100%; 
+    background: #F4F4FD}
+.teamcontaner {
+    background: #F4F4FD;
+    margin: ;
+    padding: 0 auto;
+}
 
 .card-body {
     -webkit-box-flex: 1;
@@ -309,20 +333,12 @@ h2 {
     font-weight: 400;
     line-height: 24px;
     letter-spacing: 0.32px;
-    word-wrap: break-word
-}
-.socials{
-    width: 100px;
-    height: 90px;
-    border-radius: 50%;
-    background-color: #4D5AE5;
-    
-}
+    word-wrap: break-word}
+
 .card-group {
     flex-direction: row;
     justify-content: flex-start; 
-    align-items: flex-start; 
-}
+    align-items: flex-start;}
 
 
 .row {
@@ -355,7 +371,6 @@ h2 {
     width: 18rem;
 }
 
-
 .sectionTwoUL{
     color: black;
     display: flex;
@@ -365,10 +380,76 @@ h2 {
     padding: 0;
 }
 
+.instagramlogo {
+    background-color: #404BBF;
+    
+}
+
+.teamsocials {
+    width: 40px; 
+    height: 40px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;  
+    position: absolute; 
+    background: #4D5AE5
+}
+
+
+/* customer */
+
+.customerscontaner {
+    width: 100%; 
+    height: 50%; 
+    position: relative
+}
+
+.box {
+    width: 168px; 
+    height: 88px; 
+    left: 0px; 
+    top: 0px; 
+    position: absolute; 
+    border-radius: 4px; 
+    border: 1px #8E8F99 solid;
+}
+
+.boxitemcenter {
+    width: 104px; 
+    height: 56px; 
+    left: 32px; 
+    top: 16px; 
+    position: absolute;
+}
+
+.customerimg {
+    width: 38.47px; 
+    height: 34.05px; 
+    left: 0.77px; 
+    top: 0px; 
+    position: absolute;
+}
+
+.customeritem {
+    width: 40px; 
+    height: 10.25px; 
+    left: 0px; 
+    top: 41.75px; 
+    position: absolute;
+}
+
+.customertitlelogo {
+    width: 3.19px; 
+    height: 7.02px; 
+    left: 0.01px; 
+    top: 0px; 
+    position: absolute; 
+    background: #8E8F99;
+
+}
+
 
 /* PORTFOLIO */
-
-
 .body0 {
     margin: 70px 32%;
 }
@@ -380,7 +461,6 @@ h2 {
     justify-content:space-evenly; 
     list-style: none;
 }
-
 
 .body-2 {
     margin: 30px 10%;
@@ -416,32 +496,53 @@ h2 {
 
 
 /* footer */
-
-
-.web {
-width: 100%; 
-height: 100%; 
-color: #4D5AE5; 
-font-size: 18px; 
-font-family: Raleway; 
-font-weight: 800; 
-text-transform: uppercase; 
-line-height: 21px; 
-letter-spacing: 0.54px; 
-word-wrap: break-word;
-}
-
-.studio {
+.footercontaner {
     width: 100%; 
-    height: 100%; 
-    color: #F4F4FD; 
-    font-size: 18px; 
-    font-family: Raleway; 
-    font-weight: 800; 
-    text-transform: uppercase; 
-    line-height: 21px; 
-    letter-spacing: 0.54px; 
-    word-wrap: break-word
-
+    height: 50%; 
+    background: #2E2F42;
+    display: flex;
+    align-items: baseline;
 }
 
+.footertitle{ 
+    color: white;
+    width: 27%;
+    margin-left: 200px;
+    font-size: 18px;
+    font-family: Raleway;
+    font-weight: 800;
+    line-height: 21px;
+    letter-spacing: 0.54px;
+    word-wrap: break-word 
+}
+
+.footeritem {
+    margin: 100px 100px;
+    display: flex;
+    flex-direction: row;
+}
+ 
+.footerLogoText {
+    color: #4D5AE5;
+    width: 27%;
+    font-size: 18px;
+    font-family: Raleway;
+    font-weight: 800;
+    line-height: 21px;
+    letter-spacing: 0.54px;
+    word-wrap: break-word
+}
+
+.footerp {
+    width: 27%;
+    margin-left: 200px;
+    display: flex;
+    align-items: center;
+    color: #F4F4FD;
+    font-size: 16px;
+    font-family: Roboto;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.32px;
+    word-wrap: break-word
+}
