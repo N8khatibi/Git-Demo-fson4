@@ -324,13 +324,15 @@ margin: 120px;
 
 .card-body {
     border: 1px solid #F4F4FD;
+    border-radius: 5px;
     background-color: white;
-    box-shadow: 2px 2px 10px #F4F4FD;
+    box-shadow: 1px 1px 5px gray;
 }
 
 .card-img {
     width: 100%; 
     height: 260px;
+    border-radius: 5px;
 }
 
 .card-title {
@@ -364,8 +366,9 @@ margin: 120px;
     justify-content: center;
 }
 
+
 .instagramlogo {
-    color: #E7E9FC; 
+    width: 40%;
 }
 
 .teamgroup-socials {
@@ -393,6 +396,7 @@ margin: 120px;
 /* customer */
 
 .customercontainer {
+    margin: 80px 10px;
     width: 100%;
     height: 100%;
 }
@@ -415,17 +419,15 @@ margin: 120px;
     justify-content: center;
     align-items: center;
     flex-direction: row;
-    width: 304px; 
-    height: 56px;
-    margin: 10%;
+    width: 354px; 
+    height: 50px;
+    margin: 10% 10px;
     
 }
 
 .customerimg {
-    width: 38.47px; 
-    height: 34.05px; 
-    left: 0.77px; 
-    top: 0px; 
+    width: 100%; 
+    height: 100px;    
 }
 
 .customeritem {
@@ -452,12 +454,12 @@ margin: 120px;
 }
 
 .portfolio-buttons {
-    color: #404bbf;;
+    color: #404bbf;
     background-color: #E7E9FC;
     border:0;
     border-radius: 9%;
     margin: 25px 5px;
-    width: 90px;
+    width: 100px;
     height: 40px;
     font-size: 16px;
     font-family: Roboto;
@@ -536,45 +538,75 @@ margin: 120px;
     align-items: baseline;
 }
 
-.footertitle{ 
-    color: white;
-    width: 27%;
-    margin-left: 200px;
-    font-size: 18px;
-    font-family: Raleway;
-    font-weight: 800;
-    line-height: 21px;
-    letter-spacing: 0.54px;
-    word-wrap: break-word 
-}
-
 .footeritem {
-    margin: 100px 100px;
+    margin: 80px;
     display: flex;
     flex-direction: row;
 }
- 
+
+.groupfooter1 {
+    margin-right: 40px;
+}
+
+.footertitle{ 
+    color: white;
+    margin-right:240px;
+    font-size: 18px;
+    font-family: Raleway;
+    font-weight: 800; 
+}
+
 .footerLogoText {
     color: #4D5AE5;
-    width: 27%;
     font-size: 18px;
     font-family: Raleway;
     font-weight: 800;
     line-height: 21px;
-    letter-spacing: 0.54px;
+    letter-spacing: 1px;
+}
+
+.footertext {
+    color: white;
+    font-size: 16px;
+    font-family: Roboto;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0.32px;
     word-wrap: break-word
 }
 
 .footerp {
-    width: 27%;
-    margin-left: 200px;
-    display: flex;
-    align-items: center;
+    width: 240px;
     color: #F4F4FD;
     font-size: 16px;
     font-family: Roboto;
     font-weight: 400;
     line-height: 24px;
-    letter-spacing: 0.32px;
-    word-wrap: break-word
 }
+
+.groupfooter2 {
+    
+}
+
+
+.instagramlogofooter {
+    width: 40%;
+}
+
+.footeritem2 {
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    margin: 10px 10px;
+}
+
+.footersocials {
+    width: 40px; 
+    height: 40px;
+    display: flex;
+    border-radius: 50%;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background: #4D5AE5
+}
+
