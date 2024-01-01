@@ -58,28 +58,60 @@
           <h1>Effective Solutions for Your Business</h1>
           <a><button onclick="openpopup()" class= "service-button">Other Service</button></a>
           <div class="popup" id="popup">
-              <form>
 
-                <h3 class="popuph3"><b>Leave your contacts and we will call you back</b></h3>
+           
+         
 
-                <label>
-                  Name
-                  <input class="inputpopup" type="text" name="username" >
+            <h3 class="popuph3"><b>Leave your contacts and we will call you back</b></h3>
+
+              <form action="" class="pop_up" autocomplete="on" novalidate>
+
+                <label class="">
+                  <span class="popuptitle">Name</span>
+                   <input 
+                     type="text" 
+                     class="inputpopup" 
+                     name="name" 
+                     required="autofocus" 
+                    />
+                     <svg class="popupicon" width="18" height="18">
+                      <use href="./Image/person-black-18dp 1.svg"></use>
+                     </svg>    
                 </label>
 
-                <label>
-                 <span class="popupname">Phone</span> 
-                  <input class="inputpopup" type="text" name="username" >
+                <label class="">
+                  <span class="popuptitle">Phone </span>
+                   <input 
+                     type="tel" 
+                     class="inputpopup" 
+                     name="phone" 
+                    />
+                     <svg class="popupicon" width="18" height="18">
+                      <use href="./Image/phone.svg"></use>
+                     </svg>    
                 </label>
 
-                <label>
-                  Email
-                  <input class="inputpopup" type="text" name="username">
+                <label class="">
+                  <span class="popuptitle">Email</span>
+                   <input 
+                     type="email" 
+                     class="inputpopup" 
+                     name="email" 
+                    />
+                     <svg class="popupicon" width="18" height="18">
+                      <use href="./Image/email-black-18dp 1.svg"></use>
+                     </svg>    
                 </label>
 
-                <label>
-                  Feedback
-                  <textarea class="inputpopup" name="feedback" rows="5" placeholder="Text Input"></textarea>
+                <label class="">
+                  <span class="popuptitle">Feedback</span>
+                   <textarea
+                     class="inputpopuptextbox"
+                     type="text"
+                     name="feedback" 
+                     rows="7"
+                     placeholder="Text Input">
+                   </textarea>  
                 </label>
 
                 <div class="terms">
@@ -87,7 +119,7 @@
                   <label class="form-label" for="terms">I accept the terms and conditions of the <span id="linkterms">Privacy Policy</span></label>
                 </div>
 
-              <button type="OK" onclick="closepopup()">OK</button>
+              <button class="popupok" type="OK" onclick="closepopup()">OK</button>
             </form>
           </div>
           <script>
@@ -107,21 +139,21 @@
       <ul class="sectionTwoUL">
 
         <li class="sectionTwoList" alt="link">
-          <div class="background"><img src="./Image/antenna 1.jpg" class="feature-img" alt="antenna"></div>
+          <div class="background"><img src="./Image/antenna 1 (1).svg" class="feature-img" alt="antenna"></div>
           <h5 class="fwords">Strategy</h5>
           <p class="feature-text">Bring the key message to the brand's audience for the best price within the shortest
             possible time.</p>
         </li>
 
         <li class="sectionTwoList" alt="link">
-          <div class="background"><img src="./Image/clock 1.jpg" class="feature-img" alt="clock"></div>
+          <div class="background"><img src="./Image/clock 1 (1).svg" class="feature-img" alt="clock"></div>
           <h5 class="fwords">Punctuality</h5>
           <p class="feature-text"> Our goal is to identify the business problem to walk away with the perfect and
             Creative solutions</p>
         </li>
 
         <li class="sectionTwoList" alt="link">
-          <div class="background"> <img src="./Image/diagram 1.jpg" class="feature-img" alt="diagram"></div>
+          <div class="background"> <img src="./Image/diagram 1 (2).svg" class="feature-img" alt="diagram"></div>
           <h5 class="fwords">Diligence</h5>
           <p class="feature-text"> Research and confirm brands than present the strongest digital growth opportunities
             and minimize risk.</p>
@@ -129,7 +161,7 @@
 
 
         <li class="sectionTwoList" alt="link">
-          <div class="background"> <img src="./Image/astronaut 1.jpg" class="feature-img" alt="astronaut"></div>
+          <div class="background"> <img src="./Image/astronaut 1 (2).svg" class="feature-img" alt="astronaut"></div>
           <h5 class="fwords">Technologie</h5>
           <p class="feature-text"> Design practice focused on digital experiences. We bring forth a deep passion for
             problem-solving.</p>
@@ -259,25 +291,37 @@
 
     <!--Sector 5 Customers-->
     <section class="customercontainer">
-      <h2>Customers</h2>
+      <h2 class="customertext">Customers</h2>
 
       <ul class="boxitemcenter">
 
-       <div class="box">
+       <div class="boxcustomer">
         <li class="boxcustomer">
-         <img class="customerimg" src="./Image/Client 1.jpg" />
-          <div class="customeritem"></div>
-          <div class="customertitlelogo"></div>
+         <img class="customerimg" src="./Image/Logo (2).svg" />
         </li>
        </div>
+       
+        <li class="boxcustomer">
+         <img class="customerimg" src="./Image/Logo (1).svg" />
+        </li>
 
-       <div class="box">
         <li class="boxcustomer">
-         <img class="customerimg" src="./Image/Client 2.svg" />
-          <div class="customeritem"></div>
-          <div class="customertitlelogo"></div>
-        </li>
-       </div>
+          <img class="customerimg" src="./Image/Logo.svg" />
+         </li>
+
+         <li class="boxcustomer">
+          <img class="customerimg" src="./Image/Vector.svg" />
+         </li>
+
+         <li class="boxcustomer">
+          <img class="customerimg" src="./Image/Logo (3).svg" />
+         </li>
+
+         <li class="boxcustomer">
+          <img class="customerimg" src="./Image/Logo (4).svg" />
+         </li>
+      
+
        
       </ul>
     </section>
@@ -310,15 +354,28 @@
             </ul>
           </div>
         </li>
-        <li>
+
+      <li class="groupfooter3">
           <form action="">
-            <label class="footertext">Subscribe<input type="text" name="Email" ></label>
+
+            <label class="footersub">
+              <span class="footertext">Subscribe</span>
+               <input 
+                 type="email" 
+                 class="inputemailfooter" 
+                 name="email" 
+                 placeholder="Email"
+                 autocomplete="email"
+                /> 
+            </label>
+
           </form>
-        </li>
-        <li>
+      </li>
+
+      <li class="roupfooter4">
           <button class="Subscribefooter" onclick="closepopup()">Subscribe</button>
-        </li>
-      </ul>
+      </li>
+    </ul>
     
   </footer>
 
