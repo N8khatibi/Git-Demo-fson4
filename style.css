@@ -5,7 +5,6 @@ text-decoration: none;
 list-style: none;
 }
 
-
 /* ==naveeee== */
 .title{ 
     color: #2E2F42;
@@ -32,12 +31,33 @@ list-style: none;
 }
 
 .nav-item {
+    position: relative;
+    text-decoration: none;
     color: #2E2F42;
-    margin-right: 60px;  
+    letter-spacing: 0.5px;
+    padding: 0 10px;
+  }
+
+  .nav-item::after{
+    content: "";
+    position: absolute;
+    background-color: #404BBF;
+    width: 100%; 
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -10px;  
+    transition: 0.3s; 
   }
   
 .nav-item:hover {
-    color: #404BBF;}
+    color: #404BBF; 
+}
+
+.nav-item:hover::after {
+    color: #404BBF;
+    width: 100%; 
+}
 
 .nav-list {
     margin-right: 300px;
@@ -170,6 +190,16 @@ h1 {
     transform: translate(-50%,-50%) scale(1);
 }
 
+.modle {
+    width: 5px;
+    border-radius: 50%;
+}
+
+.modle-close {
+     margin-left: 250px;
+     background-color: #E7E9FC;
+}
+
 .popuph3 {
     color: #2E2F42;
     margin: 40px auto 10px;
@@ -185,6 +215,8 @@ h1 {
 }
 
 .popuptitle {
+    position: absolute;
+    top: -24px;
     color: #8E8F99;
     font-size: 12px;
     font-family: Roboto;
@@ -195,7 +227,15 @@ h1 {
 }
 
 .popupicon {
+    position: absolute;
+    left: 16px;
+    top: 50%;
+    transform: translateY(-50%);
     color: #404BBF;
+}
+
+.popup-lable {
+    position: relative;
 }
 
 .inputpopup {
@@ -365,7 +405,7 @@ margin: 120px;
     border: 1px solid #F4F4FD;
     border-radius: 5px;
     background-color: white;
-    box-shadow: 1px 1px 5px gray;
+    box-shadow: 1px 1px 5px #b3b3b3;
 }
 
 .card-img {
@@ -435,16 +475,18 @@ margin: 120px;
 /* customer */
 
 .customercontainer {
-    margin: 100px 10px;
+    margin: 120px 10px;
     width: 100%;
-    height: 40%;
+    height: 50%;
 }
 
-.boxcustomer {
-    display: flex;
-    background-color: #fff;
-    border-color: #8E8F99;
-
+.bigbox {
+    width: 168px;
+    height: 88px;
+    border: 2px solid #b3b3b3;
+    border-radius: 5px;
+    background-color: white;
+    
 }
 
 .boxitemcenter {
@@ -453,7 +495,14 @@ margin: 120px;
     align-items: center;
     flex-direction: row;
     justify-content: space-evenly;
-    margin: 80px; 
+    margin: 80px 120px; 
+}
+
+.customerimg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px auto;
 }
 
 .customertext {
@@ -571,12 +620,13 @@ margin: 120px;
 }
 
 .groupfooter2 {
-}
-
-.groupfooter3 {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
 }
 
 .groupfooter4 {
+    margin: 40px 200px 0 0 ;
 }
 
 .footeritem {
@@ -590,9 +640,16 @@ margin: 120px;
     display: flex;
     margin-right: 80px;
     flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    
+}
+
+.footertext2 {
+    color: white;
+    margin-left: 40px;
+    font-size: 16px;
+    font-family: Roboto;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0.32px;
 }
 
 .footertitle{ 
@@ -632,7 +689,7 @@ margin: 120px;
 }
 
 .instagramlogofooter {
-    width: 40%;
+    width: 70%;
 }
 
 .teamsocials {
@@ -641,6 +698,8 @@ margin: 120px;
 }
 
 .footersocials {
+    margin-top: 16px;
+    margin-right: 15px;
     width: 40px; 
     height: 40px;
     display: flex;
@@ -650,21 +709,31 @@ margin: 120px;
     background: #4D5AE5
 }
 
+.footertext3 {
+    color: white;
+    margin-left: 15px;
+    font-size: 16px;
+    font-family: Roboto;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0.32px;
+}
+
 .inputemailfooter {
+    margin: 15px ;
     width: 264px;
     height: 40px;
     border-radius: 5px;
     border-color: #FFFFFF;
+    background-color: #2E2F42;
     display: inline-flex;
     justify-content: center; 
 }
 
-.footersub {
-    margin: 2%;
-}
 
 .Subscribefooter {
-    margin: ;
+    border-radius: 5px;
+    border-color: #4D5AE5;
     background-color: #4D5AE5;
     color: white;
     width: 165px;
